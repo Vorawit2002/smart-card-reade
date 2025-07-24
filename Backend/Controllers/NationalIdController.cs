@@ -72,19 +72,19 @@ namespace CardScanApi.Controllers
 
                 var response = new
                 {
-                    CitizenId = string.IsNullOrEmpty(personalPhoto.CitizenID) ? "ไม่ระบุ" : personalPhoto.CitizenID,
-                    TitleNameTh = string.IsNullOrEmpty(personalPhoto.ThaiPersonalInfo?.Prefix) ? "ไม่ระบุ" : personalPhoto.ThaiPersonalInfo.Prefix,
-                    FirstNameTh = string.IsNullOrEmpty(personalPhoto.ThaiPersonalInfo?.FirstName) ? "ไม่ระบุ" : personalPhoto.ThaiPersonalInfo.FirstName,
-                    LastNameTh = string.IsNullOrEmpty(personalPhoto.ThaiPersonalInfo?.LastName) ? "ไม่ระบุ" : personalPhoto.ThaiPersonalInfo.LastName,
-                    TitleNameEn = string.IsNullOrEmpty(personalPhoto.EnglishPersonalInfo?.Prefix) ? "ไม่ระบุ" : personalPhoto.EnglishPersonalInfo.Prefix,
-                    FirstNameEn = string.IsNullOrEmpty(personalPhoto.EnglishPersonalInfo?.FirstName) ? "ไม่ระบุ" : personalPhoto.EnglishPersonalInfo.FirstName,
-                    LastNameEn = string.IsNullOrEmpty(personalPhoto.EnglishPersonalInfo?.LastName) ? "ไม่ระบุ" : personalPhoto.EnglishPersonalInfo.LastName,
-                    Gender = genderText,
-                    BirthDate = SafeFormatDate(personalPhoto.DateOfBirth),
-                    IssueDate = SafeFormatDate(personalPhoto.IssueDate),
-                    ExpireDate = SafeFormatDate(personalPhoto.ExpireDate),
-                    Address = personalPhoto.AddressInfo?.ToString() ?? "ไม่ระบุ",
-                    PhotoBase64 = photoBase64,
+                    citizenId = string.IsNullOrEmpty(personalPhoto.CitizenID) ? "ไม่ระบุ" : personalPhoto.CitizenID,
+                    titleNameTh = string.IsNullOrEmpty(personalPhoto.ThaiPersonalInfo?.Prefix) ? "ไม่ระบุ" : personalPhoto.ThaiPersonalInfo.Prefix,
+                    firstNameTh = string.IsNullOrEmpty(personalPhoto.ThaiPersonalInfo?.FirstName) ? "ไม่ระบุ" : personalPhoto.ThaiPersonalInfo.FirstName,
+                    lastNameTh = string.IsNullOrEmpty(personalPhoto.ThaiPersonalInfo?.LastName) ? "ไม่ระบุ" : personalPhoto.ThaiPersonalInfo.LastName,
+                    titleNameEn = string.IsNullOrEmpty(personalPhoto.EnglishPersonalInfo?.Prefix) ? "ไม่ระบุ" : personalPhoto.EnglishPersonalInfo.Prefix,
+                    firstNameEn = string.IsNullOrEmpty(personalPhoto.EnglishPersonalInfo?.FirstName) ? "ไม่ระบุ" : personalPhoto.EnglishPersonalInfo.FirstName,
+                    lastNameEn = string.IsNullOrEmpty(personalPhoto.EnglishPersonalInfo?.LastName) ? "ไม่ระบุ" : personalPhoto.EnglishPersonalInfo.LastName,
+                    gender = genderText,
+                    birthDate = SafeFormatDate(personalPhoto.DateOfBirth),
+                    issueDate = SafeFormatDate(personalPhoto.IssueDate),
+                    expireDate = SafeFormatDate(personalPhoto.ExpireDate),
+                    address = personalPhoto.AddressInfo?.ToString() ?? "ไม่ระบุ",
+                    photoBase64 = photoBase64,
                     // Add debug info to see what's available
                     DebugInfo = new
                     {

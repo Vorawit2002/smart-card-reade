@@ -6,7 +6,7 @@
     <authors>Pichid Detson</authors>
     <projectUrl>https://github.com/bencomtech/ThaiNationalIDCard.NET</projectUrl>
     <description>Thai National ID Card Reader for .NET</description>
-    <repository type="git" url="https://github.com/bencomtech/ThaiNationalIDCard.NET" />
+    <repository type="git" url="https://github.com/bencomtech/ThaiNationalIDCard.NET" commit="6af5fb9c3f7347f1401759e9d62a5f7f34f15f24" />
     <dependencies>
       <group targetFramework=".NETStandard2.0">
         <dependency id="PCSC" version="5.0.0" exclude="Build,Analyzers" />
@@ -16,6 +16,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="/Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/bin/Debug/netstandard2.0/ThaiNationalIDCard.NET.dll" target="lib/netstandard2.0/ThaiNationalIDCard.NET.dll" />
+    <file src="C:\Users\TEE\Desktop\smart-card-reade\ThaiNationalIDCard.NET\ThaiNationalIDCard.NET\bin\Debug\netstandard2.0\ThaiNationalIDCard.NET.dll" target="lib\netstandard2.0\ThaiNationalIDCard.NET.dll" />
   </files>
 </package>

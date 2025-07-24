@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = ThaiNationalIDCard.NET
-build_property.ProjectDir = /Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/
+build_property.ProjectDir = C:\Users\TEE\Desktop\smart-card-reade\ThaiNationalIDCard.NET\ThaiNationalIDCard.NET\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

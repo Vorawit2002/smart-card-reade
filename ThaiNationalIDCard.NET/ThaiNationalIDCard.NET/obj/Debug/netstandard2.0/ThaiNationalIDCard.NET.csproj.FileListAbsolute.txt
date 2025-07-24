@@ -8,3 +8,14 @@
 /Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/obj/Debug/netstandard2.0/ThaiNationalIDCard.NET.csproj.CoreCompileInputs.cache
 /Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/obj/Debug/netstandard2.0/ThaiNationalIDCard.NET.dll
 /Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/obj/Debug/netstandard2.0/ThaiNationalIDCard.NET.pdb
+C:\Users\TEE\Desktop\smart-card-reade\ThaiNationalIDCard.NET\ThaiNationalIDCard.NET\bin\Debug\netstandard2.0\ThaiNationalIDCard.NET.deps.json
+C:\Users\TEE\Desktop\smart-card-reade\ThaiNationalIDCard.NET\ThaiNationalIDCard.NET\bin\Debug\netstandard2.0\ThaiNationalIDCard.NET.dll
+C:\Users\TEE\Desktop\smart-card-reade\ThaiNationalIDCard.NET\ThaiNationalIDCard.NET\bin\Debug\netstandard2.0\ThaiNationalIDCard.NET.pdb
+C:\Users\TEE\Desktop\smart-card-reade\ThaiNationalIDCard.NET\ThaiNationalIDCard.NET\obj\Debug\netstandard2.0\ThaiNationalIDCard.NET.csproj.AssemblyReference.cache
+C:\Users\TEE\Desktop\smart-card-reade\ThaiNationalIDCard.NET\ThaiNationalIDCard.NET\obj\Debug\netstandard2.0\ThaiNationalIDCard.NET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TEE\Desktop\smart-card-reade\ThaiNationalIDCard.NET\ThaiNationalIDCard.NET\obj\Debug\netstandard2.0\ThaiNationalIDCard.NET.AssemblyInfoInputs.cache
+C:\Users\TEE\Desktop\smart-card-reade\ThaiNationalIDCard.NET\ThaiNationalIDCard.NET\obj\Debug\netstandard2.0\ThaiNationalIDCard.NET.AssemblyInfo.cs
+C:\Users\TEE\Desktop\smart-card-reade\ThaiNationalIDCard.NET\ThaiNationalIDCard.NET\obj\Debug\netstandard2.0\ThaiNationalIDCard.NET.csproj.CoreCompileInputs.cache
+C:\Users\TEE\Desktop\smart-card-reade\ThaiNationalIDCard.NET\ThaiNationalIDCard.NET\obj\Debug\netstandard2.0\ThaiNationalIDCard.NET.sourcelink.json
+C:\Users\TEE\Desktop\smart-card-reade\ThaiNationalIDCard.NET\ThaiNationalIDCard.NET\obj\Debug\netstandard2.0\ThaiNationalIDCard.NET.dll
+C:\Users\TEE\Desktop\smart-card-reade\ThaiNationalIDCard.NET\ThaiNationalIDCard.NET\obj\Debug\netstandard2.0\ThaiNationalIDCard.NET.pdb

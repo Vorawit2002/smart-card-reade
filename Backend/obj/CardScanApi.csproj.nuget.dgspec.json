@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "/Users/teestech/Vorawit/Dev/CardScan/CardScanApi/CardScanApi.csproj": {}
+    "C:\\Users\\TEE\\Desktop\\smart-card-reade\\Backend\\CardScanApi.csproj": {}
   },
   "projects": {
-    "/Users/teestech/Vorawit/Dev/CardScan/CardScanApi/CardScanApi.csproj": {
+    "C:\\Users\\TEE\\Desktop\\smart-card-reade\\Backend\\CardScanApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/teestech/Vorawit/Dev/CardScan/CardScanApi/CardScanApi.csproj",
+        "projectUniqueName": "C:\\Users\\TEE\\Desktop\\smart-card-reade\\Backend\\CardScanApi.csproj",
         "projectName": "CardScanApi",
-        "projectPath": "/Users/teestech/Vorawit/Dev/CardScan/CardScanApi/CardScanApi.csproj",
-        "packagesPath": "/Users/teestech/.nuget/packages/",
-        "outputPath": "/Users/teestech/Vorawit/Dev/CardScan/CardScanApi/obj/",
+        "projectPath": "C:\\Users\\TEE\\Desktop\\smart-card-reade\\Backend\\CardScanApi.csproj",
+        "packagesPath": "C:\\Users\\TEE\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TEE\\Desktop\\smart-card-reade\\Backend\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/teestech/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\TEE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET.csproj": {
-                "projectPath": "/Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET.csproj"
+              "C:\\Users\\TEE\\Desktop\\smart-card-reade\\ThaiNationalIDCard.NET\\ThaiNationalIDCard.NET\\ThaiNationalIDCard.NET.csproj": {
+                "projectPath": "C:\\Users\\TEE\\Desktop\\smart-card-reade\\ThaiNationalIDCard.NET\\ThaiNationalIDCard.NET\\ThaiNationalIDCard.NET.csproj"
               }
             }
           }
@@ -80,26 +86,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET.csproj": {
+    "C:\\Users\\TEE\\Desktop\\smart-card-reade\\ThaiNationalIDCard.NET\\ThaiNationalIDCard.NET\\ThaiNationalIDCard.NET.csproj": {
       "version": "1.1.0",
       "restore": {
-        "projectUniqueName": "/Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET.csproj",
+        "projectUniqueName": "C:\\Users\\TEE\\Desktop\\smart-card-reade\\ThaiNationalIDCard.NET\\ThaiNationalIDCard.NET\\ThaiNationalIDCard.NET.csproj",
         "projectName": "ThaiNationalIDCard.NET",
-        "projectPath": "/Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET.csproj",
-        "packagesPath": "/Users/teestech/.nuget/packages/",
-        "outputPath": "/Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/obj/",
+        "projectPath": "C:\\Users\\TEE\\Desktop\\smart-card-reade\\ThaiNationalIDCard.NET\\ThaiNationalIDCard.NET\\ThaiNationalIDCard.NET.csproj",
+        "packagesPath": "C:\\Users\\TEE\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TEE\\Desktop\\smart-card-reade\\ThaiNationalIDCard.NET\\ThaiNationalIDCard.NET\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/teestech/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\TEE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -154,7 +166,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.303/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
