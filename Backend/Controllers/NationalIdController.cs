@@ -15,6 +15,15 @@ namespace CardScanApi.Controllers
             _reader = new ThaiNationalIDCardReader();
         }
 
+        [HttpGet("status")]
+        public IActionResult CheckCardStatus()
+        {
+            // For now, always return true to test auto-polling
+            // Later we can implement proper card detection
+            Console.WriteLine("Status check called - returning cardPresent: true");
+            return Ok(new { cardPresent = true });
+        }
+
         [HttpGet("read")]
         public IActionResult ReadNationalIdCard()
         {

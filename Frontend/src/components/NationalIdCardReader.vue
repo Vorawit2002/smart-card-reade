@@ -21,24 +21,30 @@
           </div>
 
           <v-card-text>
-            <!-- Read Button Section -->
-            <div class="read-button-container mb-6 text-center">
-              <v-btn
-                color="primary"
-                size="large"
-                variant="elevated"
-                prepend-icon="ri-bank-card-line"
-                :loading="loading"
-                :disabled="loading"
-                @click="readCard"
-                class="read-btn"
-                rounded="xl"
-              >
-                <span v-if="!loading">อ่านข้อมูลบัตรประชาชน</span>
-                <span v-else>กำลังอ่านข้อมูล...</span>
-              </v-btn>
-              <div class="text-caption text-grey-darken-1 mt-2">
-                เสียบบัตรประชาชนแล้วกดปุ่มเพื่ออ่านข้อมูล
+            <!-- Status Display -->
+            <div class="status-container mb-6">
+              <div v-if="loading" class="status-loading text-center">
+                <div class="loading-icon mb-3">
+                </div>
+                <div class="text-h6 text-primary mb-2">กำลังอ่านข้อมูล...</div>
+                <v-progress-linear
+                  color="primary"
+                  indeterminate
+                  rounded
+                  height="4"
+                  class="mb-2"
+                ></v-progress-linear>
+                <div class="text-caption text-grey-darken-1">
+                  กรุณารอสักครู่ ระบบกำลังประมวลผลข้อมูล...
+                </div>
+              </div>
+
+              <div v-else-if="!cardData && !error" class="status-waiting text-center">
+                <div class="waiting-icon mb-3">
+                  <i class="ri-bank-card-line" style="font-size: 48px; color: #9e9e9e"></i>
+                </div>
+                <div class="text-h6 text-grey-darken-1 mb-2">รอการเสียบบัตร</div>
+                <div class="text-body-2 text-grey-darken-2">เสียบบัตรประชาชนเข้าเครื่องอ่าน ระบบจะอ่านข้อมูลอัตโนมัติ</div>
               </div>
             </div>
 
@@ -178,6 +184,7 @@ interface CardData {
 const cardData = ref<CardData | null>(null)
 const loading = ref(false)
 const error = ref<string | null>(null)
+let pollingInterval: number | null = null
 
 // จัดรูปแบบวันที่ให้เป็นไทย (วัน/เดือน/ปี พ.ศ.)
 const formatThaiDate = (isoDate: string): string => {
@@ -217,6 +224,17 @@ const cardInfo = computed(() => {
   ]
 })
 
+// ตรวจสอบสถานะบัตร
+const checkCardStatus = async () => {
+  try {
+    const response = await axios.get('http://localhost:5003/NationalId/status', {
+      timeout: 5000,
+    })
+    return response.data.cardPresent || false
+  } catch {
+    return false
+  }
+}
 
 // อ่านข้อมูลจาก backend
 const readCard = async () => {
@@ -242,14 +260,44 @@ const readCard = async () => {
   }
 }
 
+// เริ่มการตรวจสอบบัตรอัตโนมัติ
+const startCardPolling = () => {
+  pollingInterval = setInterval(async () => {
+    if (loading.value) return
+
+    const cardPresent = await checkCardStatus()
+    console.log('Card status check:', { cardPresent, hasData: !!cardData.value })
+
+    if (cardPresent && !cardData.value) {
+      console.log('Card detected, reading data...')
+      await readCard()
+    } else if (!cardPresent && cardData.value) {
+      console.log('Card removed, clearing data...')
+      // ถอดบัตรแล้ว รีเซ็ตข้อมูล
+      cardData.value = null
+      error.value = null
+    } else if (cardData.value) {
+      console.log('Card data already loaded, skipping read')
+    }
+  }, 2000) // ตรวจสอบทุก 2 วินาที
+}
+
+// หยุดการตรวจสอบ
+const stopCardPolling = () => {
+  if (pollingInterval) {
+    clearInterval(pollingInterval)
+    pollingInterval = null
+  }
+}
+
 // เริ่มต้นเมื่อ component mount
 onMounted(() => {
-  // ไม่ต้องเริ่ม polling อัตโนมัติ
+  startCardPolling()
 })
 
 // หยุดเมื่อ component unmount
 onUnmounted(() => {
-  // ไม่ต้องหยุด polling เพราะไม่มี polling
+  stopCardPolling()
 })
 </script>
 
@@ -282,6 +330,20 @@ onUnmounted(() => {
   line-height: 1.5;
   max-width: 500px;
   margin: 0 auto;
+}
+
+/* Animation */
+.rotating {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Button Styling */
@@ -432,4 +494,14 @@ onUnmounted(() => {
     padding: 12px !important;
   }
 }
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #1976d2;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
 </style>
