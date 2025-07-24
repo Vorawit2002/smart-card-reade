@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "qPLS/WREDuE=",
+  "success": true,
+  "projectFilePath": "/Users/teestech/Vorawit/Dev/CardScan/CardScanApi/CardScanApi.csproj",
+  "expectedPackageFiles": [
+    "/Users/teestech/.nuget/packages/microsoft.aspnetcore.openapi/9.0.7/microsoft.aspnetcore.openapi.9.0.7.nupkg.sha512",
+    "/Users/teestech/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512",
+    "/Users/teestech/.nuget/packages/microsoft.win32.systemevents/9.0.7/microsoft.win32.systemevents.9.0.7.nupkg.sha512",
+    "/Users/teestech/.nuget/packages/pcsc/5.0.0/pcsc.5.0.0.nupkg.sha512",
+    "/Users/teestech/.nuget/packages/pcsc.iso7816/5.0.0/pcsc.iso7816.5.0.0.nupkg.sha512",
+    "/Users/teestech/.nuget/packages/system.drawing.common/9.0.7/system.drawing.common.9.0.7.nupkg.sha512",
+    "/Users/teestech/.nuget/packages/system.text.encoding.codepages/9.0.7/system.text.encoding.codepages.9.0.7.nupkg.sha512",
+    "/Users/teestech/.nuget/packages/thainationalidcard.net/1.1.0/thainationalidcard.net.1.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

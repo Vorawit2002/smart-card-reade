@@ -1,0 +1,10 @@
+/Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/bin/Debug/netstandard2.0/ThaiNationalIDCard.NET.deps.json
+/Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/bin/Debug/netstandard2.0/ThaiNationalIDCard.NET.dll
+/Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/bin/Debug/netstandard2.0/ThaiNationalIDCard.NET.pdb
+/Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/obj/Debug/netstandard2.0/ThaiNationalIDCard.NET.csproj.AssemblyReference.cache
+/Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/obj/Debug/netstandard2.0/ThaiNationalIDCard.NET.GeneratedMSBuildEditorConfig.editorconfig
+/Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/obj/Debug/netstandard2.0/ThaiNationalIDCard.NET.AssemblyInfoInputs.cache
+/Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/obj/Debug/netstandard2.0/ThaiNationalIDCard.NET.AssemblyInfo.cs
+/Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/obj/Debug/netstandard2.0/ThaiNationalIDCard.NET.csproj.CoreCompileInputs.cache
+/Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/obj/Debug/netstandard2.0/ThaiNationalIDCard.NET.dll
+/Users/teestech/Vorawit/Dev/CardScan/ThaiNationalIDCard.NET/ThaiNationalIDCard.NET/obj/Debug/netstandard2.0/ThaiNationalIDCard.NET.pdb
